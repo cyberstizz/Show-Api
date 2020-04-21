@@ -4,8 +4,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     
+    <div id="fullPage">
+      <div id="header"></div>
+      <div id="top"></div>
+     <div></div>
+     <div id="bottom"></div>
     </div>
   );
 }
