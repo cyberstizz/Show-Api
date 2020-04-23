@@ -46,24 +46,3 @@
   z-index: -1;
 }
 
-#top{
-  z-index: 0;
-  background-color: #1B69B3;
-  width: 100vw;
-  height: 10vh;
-}
-
-#header{
-  z-index: 0;
-  background-color: #FFD796;
-  width: 100vw;
-  height: 2vh;
-}
-
-#bottom{
-  z-index: 0;
-  background-color: #FFD796;
-  width: 100vw;
-  bottom: 0px;
-  position: fixed;
-}

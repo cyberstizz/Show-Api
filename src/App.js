@@ -1,14 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 function App() {
   return (
-    <div id="fullPage">
-      <div id="header"></div>
-      <div id="top"></div>
-     <div></div>
-     <div id="bottom"></div>
+    <div>
+    
     </div>
   );
 }
