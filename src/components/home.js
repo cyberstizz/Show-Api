@@ -11,7 +11,9 @@ export default class Home extends React.Component{
   render(){
     return (
     <div id="main-nav">
-<div id="logo"></div> <div id="nav"></div>
+<div id="logo">
+       <em> QuickShow</em> 
+    </div> <div id="nav"></div>
     </div>
 
   );
