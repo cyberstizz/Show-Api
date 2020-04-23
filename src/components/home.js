@@ -7,6 +7,8 @@ export default class Home extends React.Component{
       this.state = {
           background: ''
       }
+
+      
   }
   render(){
     return (
@@ -16,6 +18,14 @@ export default class Home extends React.Component{
     </div> 
     <div id="nav">
         <div>link1</div><button>dropdown</button> <div>link3</div>
+    </div>
+    <div id="searchSpace">
+    <form>
+            <input type="text" placeholder="enter the name of a show here"></input>
+            <input type="submit" value="submit"></input>
+
+            
+        </form>
     </div>
     </div>
 
