@@ -48,9 +48,19 @@
 
 #main-nav{
 height: 60vh;
-width: 100%;
-background-image: url("./images/breakingbad.jpg");
-background-position: 100%;
-background-size: 140%;
+width: 95%;
+background-color: steelblue;
+margin: 4vh;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
 }
 
+#logo{
+  color: green;
+  display: inline-flex;
+}
+
+#nav{
+display: inline-flex;
+flex-direction: row;
+}
