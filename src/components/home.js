@@ -11,7 +11,7 @@ export default class Home extends React.Component{
   render(){
     return (
     <div id="main-nav">
-eroernvrer
+<div id="logo"></div> <div id="nav"></div>
     </div>
 
   );
