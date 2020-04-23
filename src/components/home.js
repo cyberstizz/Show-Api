@@ -13,7 +13,10 @@ export default class Home extends React.Component{
     <div id="main-nav">
 <div id="logo">
        <em> QuickShow</em> 
-    </div> <div id="nav"></div>
+    </div> 
+    <div id="nav">
+        <div>link1</div><button>dropdown</button> <div>link3</div>
+    </div>
     </div>
 
   );
