@@ -8,7 +8,13 @@ export default class Home extends React.Component{
           background: ''
       }
 
-      
+     async const getShow = () => {
+         let theSearch = document.getElementById("searchSpace").value;
+
+         let answer = await axios.get(`https://www.episodate.com/api/search?q=${theSearch}`)
+
+         console.log(answer.data)
+     } 
   }
   render(){
     return (
