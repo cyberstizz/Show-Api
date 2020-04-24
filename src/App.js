@@ -11,9 +11,11 @@ import Action from './components/action';
 
 function App() {
   return (
-  <Router>
+  <Router> 
+    <div>
+      <Home />
     <Switch>
-     <Route path="/" component={Home} />
+     <Route exact path="/" component={Home} />
     <Route path="/Home" component={Home} />
     <Route path="/About" component={About} />
     <Route path="/Comedy" component={Comedy} />
@@ -21,6 +23,7 @@ function App() {
     <Route path="/Action" component={Action} />
     <Route path="/Drama" component={Drama} /> 
     </Switch>
+    </div>
   </Router>
   );
 }

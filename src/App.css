@@ -46,12 +46,16 @@
   z-index: -1;
 }
 
+#outer{
+  background-color: black;
+}
+
 #main-nav{
 height: 60vh;
 width: 95%;
 background-image: url("./images/breakingbad.jpg");
   background-position: 100%;
-  background-size: 140%;
+  background-size: 90%;
 margin: 4vh;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
@@ -63,6 +67,7 @@ border-top-right-radius: 15px;
   padding-top: 2vh;
   padding-left: 2vw;
   font-size: 24px;
+  background-image: url("../src/images/6d976b08-176b-4955-86d2-7731e359c331_200x200.png");
 }
 
 #nav{
@@ -98,7 +103,7 @@ margin-top: 2vh;
 
 #submit:hover{
   height: 100%;
- background-color: steelblue;
+  background-color: tan;
  margin-right: 0;
  border-color: steelblue;
  color: black;
