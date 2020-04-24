@@ -55,7 +55,7 @@ height: 60vh;
 width: 95%;
 background-image: url("./images/breakingbad.jpg");
   background-position: 100%;
-  background-size: 90%;
+  background-size: 100%;
 margin: 4vh;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
@@ -107,4 +107,8 @@ margin-top: 2vh;
  margin-right: 0;
  border-color: steelblue;
  color: black;
+}
+
+#aboutBackground{
+background-color: black;
 }
