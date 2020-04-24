@@ -53,7 +53,7 @@ export default class Home extends React.Component{
         </div>
         <div id="searchSpace">
            <form>
-                <input id="submit" type="submit" value="&#9740;"></input>  
+                <input id="submit" type="submit" value="&#x1F50D;"></input>  
                 <input id="search" type="text" placeholder="enter the name of a show here"></input>
           </form>
        </div>
