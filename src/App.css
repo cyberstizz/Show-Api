@@ -77,4 +77,5 @@ margin-top: 2vh;
 #searchSpace{
   display: flex;
   flex-direction: row;
+  margin-top: 20vh;
 }

@@ -2,9 +2,6 @@ import React from 'react';
 import '../';
 import axios from "axios";
 
-let theSearch = document.getElementById("search");
-
-let field = document.getElementById("hotSpot");
 
 
 export default class Home extends React.Component{
@@ -15,22 +12,29 @@ export default class Home extends React.Component{
       }
      } 
 
-     firecracker(){
-         console.log('firecracker')
-     }
+     buttonClick(){
+        let theSearch = document.getElementById("search").value;
 
-     componentDidMount(){
-        
-      axios.get("https://www.episodate.com/api/search?q=fresh prince")
-            .then( res =>{
-                let answer = res.data;
-                console.log(answer.tv_shows[0].name)
+        axios.get(`https://www.episodate.com/api/search?q=${theSearch}`)
+              .then( res =>{
+                  let answer = res.data;
+                  console.log(answer.tv_shows[0].name)
+  
+                  this.setState({
+                      results: answer.tv_shows[0].name
+              })
+          })
+    } 
+     
+     componentDidUpdate(){
+
 
                 this.setState({
-                    results: answer.tv_shows[0].name
+                    results: this.state.results
             })
-        })
-  }
+            
+        }
+  
     
      
 
@@ -45,7 +49,7 @@ export default class Home extends React.Component{
             <em> QuickShow</em> 
         </div> 
         <div id="nav">
-             <div>link1</div><button onClick={this.getShow}>dropdown</button> <div>link3</div>
+             <div>link1</div><button onClick={this.firecracker}>dropdown</button> <div>link3</div>
         </div>
         <div id="searchSpace">
            <form>
