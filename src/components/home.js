@@ -49,7 +49,7 @@ export default class Home extends React.Component{
             <img src="../images/quickshow.jpg" alt="Quick show"/>
         </div> 
         <div id="nav">
-             <div>link1</div><button onClick={this.firecracker}>dropdown</button> <div>link3</div>
+             <div id="navHome">Home</div> <div id="navCategories">Categories</div> <div id="navAbout">About</div>
         </div>
         <div id="searchSpace">
            <form>
