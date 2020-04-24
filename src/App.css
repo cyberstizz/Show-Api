@@ -84,18 +84,36 @@ display: inline-flex;
 flex-direction: row;
 height: 6vh;
 width: 30vw;
-margin-left: 50vw;
-margin-top: 1.5vh;
+margin-left: 60vw;
 color: yellow;
 }
 
 #navHome{
- color: yellow;
+ color: black;
  font-family: 'Knewave', cursive;
 font-size: 30px;
 font-weight: 900;
 margin-right: 2vw;
+}
 
+#navCategories{
+  color: black;
+ font-family: 'Knewave', cursive;
+font-size: 30px;
+font-weight: 900;
+margin-right: 2vw;
+}
+
+#navAbout{
+  color: black;
+  font-family: 'Knewave', cursive;
+ font-size: 30px;
+ font-weight: 900;
+ margin-right: 2vw;
+}
+
+#navAbout:hover{
+  background-color: tan;
 }
 
 #searchSpace{

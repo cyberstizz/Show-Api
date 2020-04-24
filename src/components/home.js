@@ -46,7 +46,7 @@ export default class Home extends React.Component{
 <div id="outer">
     <div id="main-nav">
         <div id="logo">
-            <img src="../images/quickshow.jpg" alt="Quick show"/>
+         <img src="../images/quickshow.jpg" alt="Quick show"/>
         </div> 
         <div id="nav">
              <div id="navHome">Home</div> <div id="navCategories">Categories</div> <div id="navAbout">About</div>
