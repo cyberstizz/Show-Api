@@ -79,6 +79,7 @@ img{
 }
 
 #nav{
+font-family: 'Knewave', cursive;
 display: inline-flex;
 flex-direction: row;
 border: black solid;
