@@ -84,11 +84,17 @@ margin-top: 2vh;
 #submit{
  height: 100%;
  background-color: white;
- 
+ margin-right: 0;
+ border-right-color: white;
+ color: black;
 }
 
 #search{
   width: 30vw;
   height: 4vh;
+  margin-left: 0;
+}
 
+#submit hover:{
+  
 }
