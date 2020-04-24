@@ -95,6 +95,10 @@ margin-top: 2vh;
   margin-left: 0;
 }
 
-#submit hover:{
-  
+#submit:hover{
+  height: 100%;
+ background-color: steelblue;
+ margin-right: 0;
+ border-color: steelblue;
+ color: black;
 }
