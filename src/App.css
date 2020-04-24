@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap')
+
+
 .App {
   text-align: center;
 }
@@ -62,12 +65,17 @@ border-top-right-radius: 15px;
 }
 
 #logo{
-  color: green;
+  height: 5vh;
+  width: 10vw;
+  z-index: 10;
+}
+
+img{
+  height: 100px;
+  width: 100px;
   display: inline-flex;
   padding-top: 2vh;
   padding-left: 2vw;
-  font-size: 24px;
-  background-image: url("../src/images/6d976b08-176b-4955-86d2-7731e359c331_200x200.png");
 }
 
 #nav{
@@ -99,6 +107,7 @@ margin-top: 2vh;
   width: 30vw;
   height: 4vh;
   margin-left: 0;
+  color: tan;
 }
 
 #submit:hover{
