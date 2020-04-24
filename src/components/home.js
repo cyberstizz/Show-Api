@@ -54,7 +54,7 @@ export default class Home extends React.Component{
         <div id="searchSpace">
            <form>
                 <input id="search" type="text" placeholder="enter the name of a show here"></input>
-                <input type="submit" value="submit"></input>     
+                <input id="submit" type="submit" value="submit"></input>     
           </form>
        </div>
     </div>

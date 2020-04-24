@@ -78,4 +78,14 @@ margin-top: 2vh;
   display: flex;
   flex-direction: row;
   margin-top: 20vh;
+  margin-left: 5vw;
+}
+
+#submit{
+  width: 10vw;
+}
+
+#search{
+  width: 15vw;
+
 }
