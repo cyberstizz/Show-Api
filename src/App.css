@@ -120,6 +120,10 @@ margin-right: 2vw;
   background-color: tan;
 }
 
+#navHome:hover{
+  background-color: tan;
+}
+
 #searchSpace{
   display: flex;
   flex-direction: row;
