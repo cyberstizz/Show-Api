@@ -46,7 +46,7 @@ export default class Home extends React.Component{
 <div>
     <div id="main-nav">
         <div id="logo">
-            <em> QuickShow</em> 
+         <img src="../images/6d976b08-176b-4955-86d2-7731e359c331_200x200.png"/>
         </div> 
         <div id="nav">
              <div>link1</div><button onClick={this.firecracker}>dropdown</button> <div>link3</div>
