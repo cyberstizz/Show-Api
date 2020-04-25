@@ -23,14 +23,11 @@ export default class Home extends React.Component{
      }
 
      getShow = event => {
-         alert(`${this.state.userQuery}`)
          event.preventDefault()
 
         axios.get("https://www.episodate.com/api/search?q=" + this.state.userQuery)
         .then( res =>{
             let answer = res.data;
-            alert(`${answer}`)
-
             this.setState({
                 results: answer.tv_shows[0].name
         })
