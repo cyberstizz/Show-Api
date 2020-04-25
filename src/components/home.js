@@ -9,6 +9,8 @@ export default class Home extends React.Component{
       super(props)
       this.state = {
           results: [],
+          resultsTwo: [],
+          resultsThree: [],
           userQuery: ""
       }
      } 
@@ -29,7 +31,9 @@ export default class Home extends React.Component{
         .then( res =>{
             let answer = res.data;
             this.setState({
-                results: answer.tv_shows[0].name
+                results: answer.tv_shows[0].name,
+                resultsTwo: answer.tv_shows[0].network,
+                resultsThree: answer.tv_shows[0].start_date
         })
     })
      }
@@ -55,7 +59,8 @@ export default class Home extends React.Component{
        </div>
     </div>
     <div><h2 id="hotSpot">{this.state.results}</h2></div>
-    <div><h2 id="hotSpotTwo">{this.state.results}</h2></div>
+    <div><h2 id="hotSpotTwo">{this.state.resultsTwo}</h2></div>
+    <div><h2 id="hotSpotThree">{this.state.resultsThree}</h2></div>
 
 </div>
 
