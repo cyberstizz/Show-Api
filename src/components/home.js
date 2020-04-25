@@ -8,15 +8,14 @@ export default class Home extends React.Component{
   constructor(props){
       super(props)
       this.state = {
-          results: []
+          results: [],
           userQuery: ''
       }
      } 
 
-     buttonClick(){
-        let theSearch = document.getElementById("search").value;
+     componentDidMount(){
 
-        axios.get(`https://www.episodate.com/api/search?q=${theSearch}`)
+        axios.get(`https://www.episodate.com/api/search?q=fresh prince`)
               .then( res =>{
                   let answer = res.data;
                   console.log(answer.tv_shows[0].name)
@@ -26,15 +25,6 @@ export default class Home extends React.Component{
               })
           })
     } 
-     
-     componentDidUpdate(){
-
-
-                this.setState({
-                    results: this.state.results
-            })
-            
-        }
   
     
      
