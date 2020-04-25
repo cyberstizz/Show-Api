@@ -134,6 +134,10 @@ margin-right: 2vw;
   margin-left: 5vw;
 }
 
+#searchSpace:hover{
+background-color: tan;
+}
+
 #submit{
  height: 100%;
  background-color: white;
