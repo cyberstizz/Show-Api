@@ -45,7 +45,7 @@ export default class Home extends React.Component{
         <div id="searchSpace">
            <form>
                 <input id="submit" type="submit" value="&#x1F50D;"></input>  
-                <input id="search" type="text" value={this.state.userQuery} placeholder="enter the name of a show here"></input>
+                <input id="search" type="text" value={this.state.userQuery} onChange={this.typing.bind(this)} placeholder="enter the name of a show here"></input>
           </form>
        </div>
     </div>
