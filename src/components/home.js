@@ -43,9 +43,9 @@ export default class Home extends React.Component{
              <div id="navHome">Home</div> <div id="navCategories">Categories</div> <div id="navAbout">About</div>
         </div>
         <div id="searchSpace">
-           <form>
+           <form onSubmit={this.getShow}>
                 <input id="submit" type="submit" value="&#x1F50D;"></input>  
-                <input id="search" type="text" value={this.state.userQuery} onChange={this.typing.bind(this)} placeholder="enter the name of a show here"></input>
+                <input id="search" type="text" value={this.state.userQuery} onChange={this.typing.} placeholder="enter the name of a show here"></input>
           </form>
        </div>
     </div>
