@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import '../';
 import axios from "axios";
 
@@ -24,15 +24,16 @@ export default class Home extends React.Component{
 
      getShow = event => {
          alert(`${this.state.userQuery}`)
-        axios.get(`https://www.episodate.com/api/search?q=fresh prince`)
+         event.preventDefault()
+
+        axios.get("https://www.episodate.com/api/search?q=" + this.state.userQuery)
         .then( res =>{
             let answer = res.data;
-            console.log(answer.tv_shows[0].name)
+            alert(`${answer}`)
 
             this.setState({
                 results: answer.tv_shows[0].name
         })
-        event.preventDefault()
     })
      }
 
