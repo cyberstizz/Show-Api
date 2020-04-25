@@ -23,6 +23,7 @@ export default class Home extends React.Component{
      }
 
      getShow = event => {
+         alert(`${this.state.userQuery}`)
         axios.get(`https://www.episodate.com/api/search?q=fresh prince`)
         .then( res =>{
             let answer = res.data;
@@ -31,7 +32,7 @@ export default class Home extends React.Component{
             this.setState({
                 results: answer.tv_shows[0].name
         })
-        event.preventDefault;
+        event.preventDefault()
     })
      }
 
