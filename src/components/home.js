@@ -31,6 +31,7 @@ export default class Home extends React.Component{
             this.setState({
                 results: answer.tv_shows[0].name
         })
+        event.preventDefault;
     })
      }
 
