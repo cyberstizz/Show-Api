@@ -27,7 +27,11 @@ export default class Home extends React.Component{
     } 
   
     
-     
+     typing = event => {
+         this.setState({
+            userQuery: event.target.value
+         })
+     }
 
   
   render(){
@@ -45,7 +49,7 @@ export default class Home extends React.Component{
         <div id="searchSpace">
            <form onSubmit={this.getShow}>
                 <input id="submit" type="submit" value="&#x1F50D;"></input>  
-                <input id="search" type="text" value={this.state.userQuery} onChange={this.typing.} placeholder="enter the name of a show here"></input>
+                <input id="search" type="text" value={this.state.userQuery} onChange={this.typing} placeholder="enter the name of a show here"></input>
           </form>
        </div>
     </div>
