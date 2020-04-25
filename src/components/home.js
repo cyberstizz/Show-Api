@@ -13,18 +13,7 @@ export default class Home extends React.Component{
       }
      } 
 
-     componentDidMount(){
-
-        axios.get(`https://www.episodate.com/api/search?q=fresh prince`)
-              .then( res =>{
-                  let answer = res.data;
-                  console.log(answer.tv_shows[0].name)
-  
-                  this.setState({
-                      results: answer.tv_shows[0].name
-              })
-          })
-    } 
+     
   
     
      typing = event => {
@@ -34,7 +23,15 @@ export default class Home extends React.Component{
      }
 
      getShow = event => {
-         
+        axios.get(`https://www.episodate.com/api/search?q=fresh prince`)
+        .then( res =>{
+            let answer = res.data;
+            console.log(answer.tv_shows[0].name)
+
+            this.setState({
+                results: answer.tv_shows[0].name
+        })
+    })
      }
 
   
