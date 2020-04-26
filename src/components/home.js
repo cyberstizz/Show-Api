@@ -11,7 +11,8 @@ export default class Home extends React.Component{
           results: [],
           resultsTwo: [],
           resultsThree: [],
-          userQuery: ""
+          userQuery: "",
+          backgroundImage: `url("./images/breakingbad.jpg")`
       }
      } 
 
@@ -33,20 +34,19 @@ export default class Home extends React.Component{
             this.setState({
                 results: answer.tv_shows[0].name,
                 resultsTwo: answer.tv_shows[0].network,
-                resultsThree: answer.tv_shows[0].start_date
+                resultsThree: answer.tv_shows[0].start_date,
+                backgroundImage: `url(${answer.tv_shows[0].image_thumbnail_path})`
         })
     })
      }
-
   
   render(){
   
 
     return (
 <div id="outer">
-    <div id="main-nav">
+    <div id="main-nav" style={{backgroundImage: this.state.backgroundImage}}>
         <div id="logo">
-         <img src="../images/quickshow.jpg" alt="Quick show"/>
         </div> 
         <div id="nav">
              <div id="navHome">Home</div> <div id="navCategories">Categories</div> <div id="navAbout">About</div>

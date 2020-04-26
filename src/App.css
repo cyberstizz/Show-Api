@@ -40,14 +40,14 @@
   }
 }
 
-#fullPage{
+/*#fullPage{
   background-image: url("./images/breakingbad.jpg");
   background-position: 100%;
   background-size: 140%;
   height: 100vh;
   width: 100vw;
   z-index: -1;
-}
+}*/
 
 #outer{
   background-color: black;
@@ -57,17 +57,19 @@
 height: 60vh;
 width: 95%;
 background-image: url("./images/breakingbad.jpg");
-  background-position: 100%;
-  background-size: 100%;
+background-position: 100%;
+background-size: 100%;
 margin: 4vh;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
 }
 
 #logo{
-  height: 5vh;
-  width: 10vw;
-  z-index: 10;
+  height: 80px;
+  width: 200px;
+  background-image: url("./images/5cc5af3c-5bd0-4d5c-9a77-a624d27e9dd7_200x200.png");
+  background-position: 100%;
+  background-size: 100%;
 }
 
 img{
@@ -90,7 +92,7 @@ color: yellow;
 
 #navHome{
  color: black;
- background-color: tan;
+ background-color: white;
  font-family: 'Knewave', cursive;
 font-size: 30px;
 font-weight: 900;
@@ -99,7 +101,7 @@ margin-right: 2vw;
 
 #navCategories{
   color: black;
-  background-color: tan;
+  background-color: white;
  font-family: 'Knewave', cursive;
 font-size: 30px;
 font-weight: 900;
@@ -108,7 +110,7 @@ margin-right: 2vw;
 
 #navAbout{
   color: black;
-  background-color: tan;
+  background-color: white;
   font-family: 'Knewave', cursive;
  font-size: 30px;
  font-weight: 900;
@@ -153,9 +155,9 @@ margin-right: 2vw;
 
 #submit:hover{
   height: 100%;
-  background-color: steelblue;
+  background-color: black;
  margin-right: 0;
- border-color: s;
+ border-color: white;
  color: black;
 }
 
@@ -164,16 +166,16 @@ background-color: black;
 }
 
 #hotSpot{
-  color: yellow;
+  color: white;
   height: 10vh;
 }
 
 #hotSpotTwo{
-  color: yellow;
+  color: white;
   height: 8vh;
 }
 
 #hotSpotThree{
-  color: yellow;
+  color: white;
   height: 8vh;
 }
