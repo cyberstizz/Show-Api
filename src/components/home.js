@@ -49,7 +49,7 @@ export default class Home extends React.Component{
         <div id="logo">
         </div> 
         <div id="nav">
-             <div id="navHome">Home</div> <div id="navCategories">Categories</div> <div id="navAbout">About</div>
+             <div id="navHome"></div> <div id="navCategories"></div> <div id="navAbout"></div>
         </div>
         <div id="searchSpace">
            <form onSubmit={this.getShow}>

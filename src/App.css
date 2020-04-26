@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 .App {
   text-align: center;
@@ -81,40 +80,44 @@ img{
 }
 
 #nav{
-font-family: 'Knewave', cursive;
+font-family: 'Bangers', cursive;
 display: inline-flex;
 flex-direction: row;
 height: 6vh;
 width: 30vw;
 margin-left: 60vw;
-color: yellow;
 }
 
 #navHome{
- color: black;
- background-color: white;
- font-family: 'Knewave', cursive;
-font-size: 30px;
-font-weight: 900;
-margin-right: 2vw;
+ background-image: url("./images/homeNavfixed.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
 }
 
+#navHome:hover{
+  background-image: url("./images/homeNavMouse.png");
+   background-position: 100%;
+   background-size: 100%;
+   height: 40px;
+   width: 100px;
+ }
+
 #navCategories{
-  color: black;
-  background-color: white;
- font-family: 'Knewave', cursive;
-font-size: 30px;
-font-weight: 900;
-margin-right: 2vw;
+  background-image: url("./images/categoriesNav.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
 }
 
 #navAbout{
-  color: black;
-  background-color: white;
-  font-family: 'Knewave', cursive;
- font-size: 30px;
- font-weight: 900;
- margin-right: 2vw;
+  background-image: url("./images/homeNavfixed.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
 }
 
 #navAbout:hover{
@@ -140,7 +143,7 @@ margin-right: 2vw;
 
 #submit{
  height: 100%;
- background-color: white;
+ background-color: grey;
  margin-right: 0;
  border-right-color: white;
  color: black;
