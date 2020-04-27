@@ -181,11 +181,72 @@ background-color: black;
 }
 
 #hotSpotTwo{
-  color: white;
-  height: 8vh;
+  color: black;
+  height: 100%;
+  border: solid black;
 }
 
 #hotSpotThree{
-  color: white;
-  height: 8vh;
+  color: black;
+  height: 100%;
+  border: solid black;
+}
+
+#hotSpotFour{
+  color: black;
+  height: 100%;
+  border: solid black;
+}
+
+#bottomRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 25vh;
+  background-color: white;
+}
+
+#network{
+  background-image: url("./images/network.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
+}
+
+#firstAired{
+  background-image: url("./images/firstAired.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
+}
+
+#stillRunning{
+  background-image: url("./images/tvIcon.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
+}
+
+#bottomOne{
+width: 33vw;
+border: black solid;
+display: flex;
+flex-direction: row;
+}
+
+#bottomTwo{
+  width: 33vw;
+  border: black solid;
+  display: flex;
+  flex-direction: row;
+}
+
+#bottomThree{
+  width: 33vw;
+  border: black solid;
+  display: flex;
+  flex-direction: row;
 }

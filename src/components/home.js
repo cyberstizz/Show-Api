@@ -11,6 +11,7 @@ export default class Home extends React.Component{
           results: [],
           resultsTwo: [],
           resultsThree: [],
+          resultsFour: [],
           userQuery: "",
           backgroundImage: `url("./images/breakingbad.jpg")`
       }
@@ -35,6 +36,7 @@ export default class Home extends React.Component{
                 results: answer.tv_shows[0].name,
                 resultsTwo: answer.tv_shows[0].network,
                 resultsThree: answer.tv_shows[0].start_date,
+                resultsFour: answer.tv_shows[0].start_date,
                 backgroundImage: `url(${answer.tv_shows[0].image_thumbnail_path})`
         })
     })
@@ -59,9 +61,20 @@ export default class Home extends React.Component{
        </div>
     </div>
     <div><h2 id="hotSpot">{this.state.results}</h2></div>
-    <div><h2 id="hotSpotTwo">{this.state.resultsTwo}</h2></div>
-    <div><h2 id="hotSpotThree">{this.state.resultsThree}</h2></div>
-
+    <div id="bottomRow">
+        <div id="bottomOne">
+            <div id="network"></div>
+            <h2 id="hotSpotTwo">{this.state.resultsTwo}</h2>
+        </div>
+        <div id="bottomTwo">
+            <div id="firstAired"></div>
+            <h2 id="hotSpotThree">{this.state.resultsThree}</h2>
+        </div>
+        <div id="bottomThree">
+            <div id="stillRunning"></div>
+            <h2 id="hotSpotFour">{this.state.resultsFour}</h2>
+        </div>
+    </div>
 </div>
 
   );
