@@ -113,7 +113,7 @@ margin-left: 60vw;
 }
 
 #navAbout{
-  background-image: url("./images/homeNavfixed.png");
+  background-image: url("./images/aboutNav.png");
   background-position: 100%;
   background-size: 100%;
   height: 40px;
@@ -121,11 +121,18 @@ margin-left: 60vw;
 }
 
 #navAbout:hover{
-  background-color: grey;
-}
+  background-image: url("./images/aboutMouse.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;}
 
 #navCategories:hover{
-  background-color: grey;
+  background-image: url("./images/CategoriesMouse.png");
+  background-position: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
 }
 
 #navHome:hover{
