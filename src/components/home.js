@@ -36,7 +36,7 @@ export default class Home extends React.Component{
                 results: answer.tv_shows[0].name,
                 resultsTwo: answer.tv_shows[0].network,
                 resultsThree: answer.tv_shows[0].start_date,
-                resultsFour: answer.tv_shows[0].start_date,
+                resultsFour: answer.tv_shows[0].status,
                 backgroundImage: `url(${answer.tv_shows[0].image_thumbnail_path})`
         })
     })

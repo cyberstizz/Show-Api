@@ -66,7 +66,7 @@ border-top-right-radius: 15px;
 #logo{
   height: 80px;
   width: 200px;
-  background-image: url("./images/5cc5af3c-5bd0-4d5c-9a77-a624d27e9dd7_200x200.png");
+  background-image: url("./images/quickshow.jpg");
   background-position: 100%;
   background-size: 100%;
 }
@@ -178,24 +178,22 @@ background-color: black;
 #hotSpot{
   color: white;
   height: 10vh;
+  text-align: center;
 }
 
 #hotSpotTwo{
   color: black;
   height: 100%;
-  border: solid black;
 }
 
 #hotSpotThree{
   color: black;
   height: 100%;
-  border: solid black;
 }
 
 #hotSpotFour{
   color: black;
   height: 100%;
-  border: solid black;
 }
 
 #bottomRow{
@@ -210,24 +208,24 @@ background-color: black;
   background-image: url("./images/network.png");
   background-position: 100%;
   background-size: 100%;
-  height: 40px;
-  width: 100px;
+  height: 80%;
+  width: 50%;
 }
 
 #firstAired{
   background-image: url("./images/firstAired.png");
   background-position: 100%;
   background-size: 100%;
-  height: 40px;
-  width: 100px;
+  height: 80%;
+  width: 50%;
 }
 
 #stillRunning{
   background-image: url("./images/tvIcon.png");
   background-position: 100%;
   background-size: 100%;
-  height: 40px;
-  width: 100px;
+  height: 80%;
+  width: 50%;
 }
 
 #bottomOne{
