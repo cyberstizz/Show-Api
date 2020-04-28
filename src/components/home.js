@@ -33,7 +33,7 @@ export default class Home extends React.Component{
         .then( res =>{
             let answer = res.data;
             this.setState({
-                results: answer.tv_shows[0].name,
+                results: ` ${answer.tv_shows[0].name}`,
                 resultsTwo: answer.tv_shows[0].network,
                 resultsThree: answer.tv_shows[0].start_date,
                 resultsFour: answer.tv_shows[0].status,
@@ -60,7 +60,7 @@ export default class Home extends React.Component{
           </form>
        </div>
     </div>
-    <div><h2 id="hotSpot">{this.state.results}</h2></div>
+    <div><h1 id="hotSpot">&#8284;{this.state.results}&#8284;</h1></div>
     <div id="bottomRow">
         <div id="bottomOne">
             <div id="network"></div>

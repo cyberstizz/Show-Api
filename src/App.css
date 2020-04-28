@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Knewave&display=swap');
 
 .App {
   text-align: center;
@@ -135,9 +135,6 @@ margin-left: 60vw;
   width: 100px;
 }
 
-#navHome:hover{
-  background-color: grey;
-}
 
 #searchSpace{
   display: flex;
@@ -179,6 +176,7 @@ background-color: black;
   color: white;
   height: 10vh;
   text-align: center;
+  font-family: 'Dancing Script', cursive;
 }
 
 #hotSpotTwo{
@@ -247,4 +245,56 @@ flex-direction: row;
   border: black solid;
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (min-width: 1280px){
+
+#navHome{
+  background-image: url("./images/homeNavfixed.png");
+   background-position: 60%;
+   background-size: 95%;
+   height: 55px;
+   width: 100px;
+ }
+ 
+ #navHome:hover{
+   background-image: url("./images/homeNavMouse.png");
+    background-position: 100%;
+    background-size: 100%;
+    height: 55px;
+   width: 100px;
+  }
+ 
+ #navCategories{
+   background-image: url("./images/categoriesNav.png");
+   background-position: 100%;
+   background-size: 100%;
+   height: 55px;
+   width: 100px;
+ }
+ 
+ #navAbout{
+   background-image: url("./images/aboutNav.png");
+   background-position: 100%;
+   background-size: 100%;
+   height: 55px;
+   width: 100px;
+ }
+ 
+ #navAbout:hover{
+   background-image: url("./images/aboutMouse.png");
+   background-position: 100%;
+   background-size: 100%;
+   height: 55px;
+   width: 100px;
+  }
+ 
+ #navCategories:hover{
+   background-image: url("./images/CategoriesMouse.png");
+   background-position: 100%;
+   background-size: 100%;
+   height: 55px;
+   width: 100px;
+ }
+ 
 }
