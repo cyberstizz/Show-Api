@@ -60,7 +60,12 @@ export default class Home extends React.Component{
 <div id="outer">
     <div id="popupDiv">Welcome to Quickshow! A quick way to learn information about a tv show or series. <br/>
                         Type the name of a show into the search bar and the displays at the bottom will <br/>
-                        present the network the show belonged to, its first air date, and if it is still running.
+                        present the network the show belonged to, its first air date, and if it is still running. <br/>
+    
+    <button onClick={() => {
+    let thePopup = document.getElementById('popupDiv');
+    thePopup.style.visibility = 'visible' ? thePopup.style.visibility = 'hidden' : thePopup.style.visibility = 'hidden';
+    }}>Get Started</button>
     </div>
     <div id="main-nav">
         <div id="logo">

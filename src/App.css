@@ -212,10 +212,12 @@ background-color: black;
   width: 80vw;
   margin-top: 0;
   margin-left: 10vw;
-  background-color: white;
+  background-color: black;
+  border: dotted white 6px;
   color: silver;
   text-align: center;
-
+  font-size: 40px;
+  visibility: visible;
 }
 
 #network{
