@@ -1,7 +1,8 @@
 import React from 'react';
-import '../';
 import axios from "axios";
+import '../breakingbad.jpg';
 
+const startingBackground = '../breakingbad.jpg'
 
 
 export default class Home extends React.Component{
@@ -13,7 +14,9 @@ export default class Home extends React.Component{
           resultsThree: [],
           resultsFour: [],
           userQuery: "",
-          backgroundImage: `url("./images/breakingbad.jpg")`
+          backgroundImage: `url(${startingBackground})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'auto',
       }
      } 
 
@@ -33,21 +36,29 @@ export default class Home extends React.Component{
         .then( res =>{
             let answer = res.data;
             this.setState({
-                results: ` ${answer.tv_shows[0].name}`,
+                results: answer.tv_shows[0].name,
                 resultsTwo: answer.tv_shows[0].network,
                 resultsThree: answer.tv_shows[0].start_date,
                 resultsFour: answer.tv_shows[0].status,
-                backgroundImage: `url(${answer.tv_shows[0].image_thumbnail_path})`
+                backgroundImage: `url(${answer.tv_shows[0].image_thumbnail_path})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'contain'
         })
+   
+    }).catch(error => {
+        return error
     })
      }
+
   
   render(){
+
+   
   
 
     return (
 <div id="outer">
-    <div id="main-nav" style={{backgroundImage: this.state.backgroundImage}}>
+    <div id="main-nav" style={{backgroundImage: this.state.backgroundImage, backgroundRepeat: this.state.backgroundRepeat, backgroundSize: this.state.backgroundSize}}>
         <div id="logo">
         </div> 
         <div id="nav">

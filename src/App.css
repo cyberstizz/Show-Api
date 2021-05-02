@@ -55,9 +55,10 @@
 #main-nav{
 height: 60vh;
 width: 95%;
-background-image: url("./images/breakingbad.jpg");
+/* background-image: url("/breakingbad.jpg");
 background-position: 100%;
-background-size: 100%;
+background-size: 100%; */
+border: solid red 2px;
 margin: 4vh;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
