@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import '../App.css';
 import '../breakingbad.jpg';
 
 const startingBackground = '../breakingbad.jpg'
@@ -58,7 +59,7 @@ export default class Home extends React.Component{
 
     return (
 <div id="outer">
-    <div id="main-nav" style={{backgroundImage: this.state.backgroundImage, backgroundRepeat: this.state.backgroundRepeat, backgroundSize: this.state.backgroundSize}}>
+    <div id="main-nav">
         <div id="logo">
         </div> 
         <div id="nav">

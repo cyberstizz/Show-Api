@@ -55,13 +55,19 @@
 #main-nav{
 height: 60vh;
 width: 95%;
-/* background-image: url("/breakingbad.jpg");
-background-position: 100%;
-background-size: 100%; */
+background-image: url("./breakingbad.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 border: solid red 2px;
 margin: 4vh;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
+}
+
+#outer{
+  height: 100vh;
+  width: 100vw;
 }
 
 #logo{
@@ -72,13 +78,6 @@ border-top-right-radius: 15px;
   background-size: 100%;
 }
 
-img{
-  height: 100px;
-  width: 100px;
-  display: inline-flex;
-  padding-top: 2vh;
-  padding-left: 2vw;
-}
 
 #nav{
 font-family: 'Bangers', cursive;
@@ -248,7 +247,7 @@ flex-direction: row;
   flex-direction: row;
 }
 
-@media screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px){
 
 #navHome{
   background-image: url("./images/homeNavfixed.png");
