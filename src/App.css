@@ -206,6 +206,18 @@ background-color: black;
   margin-bottom: 26vh;
 }
 
+#popupDiv{
+  position: absolute;
+  height: 90vh;
+  width: 80vw;
+  margin-top: 0;
+  margin-left: 10vw;
+  background-color: white;
+  color: silver;
+  text-align: center;
+
+}
+
 #network{
   background-image: url("./images/network.png");
   background-position: center;

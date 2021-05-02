@@ -58,6 +58,7 @@ export default class Home extends React.Component{
 
     return (
 <div id="outer">
+    <div id="popupDiv"></div>
     <div id="main-nav">
         <div id="logo">
         </div> 
