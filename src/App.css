@@ -217,7 +217,7 @@ background-color: black;
   color: silver;
   text-align: center;
   font-size: 40px;
-  visibility: visible;
+  visibility: hidden;
 }
 
 #network{

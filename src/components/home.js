@@ -53,7 +53,10 @@ export default class Home extends React.Component{
   
   render(){
 
-   
+   setTimeout( () =>{
+    let thePopup = document.getElementById('popupDiv');
+    thePopup.style.visibility = 'hidden' ? thePopup.style.visibility = 'visible' : thePopup.style.visibility = 'hidden';
+   }, 2000) ;
   
 
     return (
