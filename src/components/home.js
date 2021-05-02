@@ -15,9 +15,7 @@ export default class Home extends React.Component{
           resultsThree: [],
           resultsFour: [],
           userQuery: "",
-          backgroundImage: `url(${startingBackground})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'auto',
+          backgroundImageCall: `url(${startingBackground})`
       }
      } 
 
@@ -41,10 +39,11 @@ export default class Home extends React.Component{
                 resultsTwo: answer.tv_shows[0].network,
                 resultsThree: answer.tv_shows[0].start_date,
                 resultsFour: answer.tv_shows[0].status,
-                backgroundImage: `url(${answer.tv_shows[0].image_thumbnail_path})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'contain'
+                backgroundImageCall: `url(${answer.tv_shows[0].image_thumbnail_path})`
+                
         })
+        let imagePlace = document.getElementById('main-nav');
+        imagePlace.style.backgroundImage = this.state.backgroundImageCall;
    
     }).catch(error => {
         return error
