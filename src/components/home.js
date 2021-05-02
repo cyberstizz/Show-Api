@@ -50,13 +50,20 @@ export default class Home extends React.Component{
     })
      }
 
+     componentDidMount(){
+        setTimeout( () =>{
+            let thePopup = document.getElementById('popupDiv');
+            thePopup.style.visibility = 'hidden' ? thePopup.style.visibility = 'visible' : thePopup.style.visibility = 'hidden';
+           }, 2000) ;
+     }
+
   
   render(){
 
-   setTimeout( () =>{
-    let thePopup = document.getElementById('popupDiv');
-    thePopup.style.visibility = 'hidden' ? thePopup.style.visibility = 'visible' : thePopup.style.visibility = 'hidden';
-   }, 2000) ;
+//    setTimeout( () =>{
+//     let thePopup = document.getElementById('popupDiv');
+//     thePopup.style.visibility = 'hidden' ? thePopup.style.visibility = 'visible' : thePopup.style.visibility = 'hidden';
+//    }, 2000) ;
   
 
     return (
