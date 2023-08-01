@@ -13,36 +13,29 @@
 
 
 ### Synopsis
-this is just a bash script the runs bash commands that will push your updated work
-to github or whatever remote repository you are using in one command. to use this, you can fork and clone this repository than put the command as an executable in your
-class path. If this is confusing to you, you can reach out to me personally at
-charles.lamb.dev@gmail.com and I will assist you. enjoy!!
+this is probably the first React project that I ever created. It uses Axios for api calls.
 
 
-### the catch
-this command is supposed to make everything easier however there is a catch in
-this case. while the command works, you have to make sure that you are in the
-directory that you have changed or in a directory above it, otherwise you 
-changes will not be commited. other than that it will work just fine. the 
-reason for this is because under the hood the command used is git add .., which
-will add the contents of the current folder and everything underneath it.
+### How it works
+Simple, there is a search bar in the center of the screen. type the name of the show into the search bar and if the show is in our database(which it most likely is), the results will be displayed on the screen.
 
+the results will be:
+1. when the show first aired
+2. what network the show appeared on
+3. if the show is still running
+
+there will also be art from the show displayed in the center of the screen(if available)
 
 
 ### Biggest challenges
-here my biggest challenge was learning about how bash scripts can be turned
-into executable commands, however it was not very challenging at all, and
-now I use executable custom scripts all the time.
+funny enough, back in 2020 when I first created this application, I could not get it to work for days. the reason it did not work is because I was trying to use http instead of https for my api calls. so as always I learned something valuable.
 
 
 ### Code Review
-the code simply takes in what you type and makes it your commit message to send
-to your remote repository.
+this project uses very basic code, but one thing that I find very cool, is the fact that it still uses the old class based React components. awesome and archaic!!
 
 ### final thought
-I learned a lot doing this because not only was it my first custom script that 
-I created but it helped me speed up my productivity by not having to use three
-steps just to push my latest commit.
+I learned a bit about networking from this project, and as a result I keep it to remind me of the four days or so I spent beating my head against the wall all over a simnple mistake.
 
 
 ### for more projects by CyberStizz visit: [Charleslambjr.com](https://www.charleslambjr.com/)
