@@ -1,6 +1,6 @@
 
 
-![](./src/main/resources/squintreadmepic.jpg)
+![](./public/Screenshot%202023-07-31%2010.03.22%20PM.png)
 
 
 #             **QuickShow**
