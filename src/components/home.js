@@ -63,8 +63,11 @@ export default class Home extends React.Component{
         return error
     })
      }
-     
 
+//this lifecycle method used withing react class components was 
+//created to make a pop up appear when you first enter the websit
+//this popup will appear on the page until you click and acknowledge it
+//then it will be set to disappear
      componentDidMount(){
         setTimeout( () =>{
             let thePopup = document.getElementById('popupDiv');
