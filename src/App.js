@@ -1,3 +1,5 @@
+// imports include the requirements for react the main css file and the components
+
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
