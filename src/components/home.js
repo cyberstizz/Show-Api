@@ -1,14 +1,22 @@
+// React and axios or the only imports required for this page
+// so they are imported here
 import React from 'react';
 import axios from "axios";
 import '../App.css';
 import '../breakingbad.jpg';
-
-const startingBackground = '../breakingbad.jpg'
+// the application starts with the breaking bad picture as the background
+// so the first thing that I did was put the path to that image in a variable
+const startingBackground = '../breakingbad.jpg';
 
 
 export default class Home extends React.Component{
   constructor(props){
       super(props)
+    //   the this.state property for this component is generated as an object.
+    //   each property in this object has the value of an array for each
+    //   slot that will display results about a show as well and strings
+    //   to represent what the user types in, and the url
+    //   to the background image
       this.state = {
           results: [],
           resultsTwo: [],
@@ -20,14 +28,20 @@ export default class Home extends React.Component{
      } 
 
      
-  
-    
+
+    // this is a function to change the userquery property on this.state
+    // every time that user types into the search bar
      typing = event => {
+        //this.setstate is used to achieve this
          this.setState({
             userQuery: event.target.value
          })
      }
 
+
+        // this is a function to make the api call to the episodate api and display
+        // the results by changing this.state properties and displaying the values
+        // of those properties in the dom
      getShow = event => {
          event.preventDefault()
 
@@ -49,6 +63,7 @@ export default class Home extends React.Component{
         return error
     })
      }
+     
 
      componentDidMount(){
         setTimeout( () =>{
