@@ -39,9 +39,9 @@ export default class Home extends React.Component{
      }
 
 
-        // this is a function to make the api call to the episodate api and display
-        // the results by changing this.state properties and displaying the values
-        // of those properties in the dom
+            // this is a function to make the api call to the episodate api and display
+            // the results by changing this.state properties and displaying the values
+            // of those properties in the dom
      getShow = event => {
          event.preventDefault()
 
