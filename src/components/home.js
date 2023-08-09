@@ -81,6 +81,8 @@ export default class Home extends React.Component{
 
     return (
 <div id="outer">
+    {/* this is the popup that will occur when a user initially enters a page */}
+    {/* its is set to popupDiv and that will be made invisible once a user clicks on it */}
     <div id="popupDiv">Welcome to Quickshow! A quick way to learn information about a tv show or series. <br/>
                         Type the name of a show into the search bar and the displays at the bottom will <br/>
                         present the network the show belonged to, its first air date, and if it is still running. <br/>
@@ -90,12 +92,15 @@ export default class Home extends React.Component{
     thePopup.style.visibility = 'visible' ? thePopup.style.visibility = 'hidden' : thePopup.style.visibility = 'hidden';
     }}>Get Started</button>
     </div>
+    {/* this section ... main div is the part that you see the breaking bad logo on. it holds the search bar */}
     <div id="main-nav">
         <div id="logo">
         </div> 
         <div id="nav">
              <div id="navHome"></div> <div id="navCategories"></div> <div id="navAbout"></div>
         </div>
+
+        {/* this is the searchbar in the middle of the screen */}
         <div id="searchSpace">
            <form onSubmit={this.getShow}>
                 <input id="submit" type="submit" value="&#x1F50D;"></input>  
@@ -103,6 +108,7 @@ export default class Home extends React.Component{
           </form>
        </div>
     </div>
+    {/* this is the section where the results appear after you have entered a search query */}
     <div><h1 id="hotSpot">&#8284;{this.state.results}&#8284;</h1></div>
     <div id="bottomRow">
         <div id="bottomOne">
