@@ -45,13 +45,16 @@ class Home extends Component {
   //an event handler for when the user clicks the button
   handleGetShow = async (event) => {
     event.preventDefault();
-
+    //get request using axios to call the episodedate api
     try {
       const response = await axios.get(
         `https://www.episodate.com/api/search?q=${this.state.userQuery}`
       );
       const firstShow = response.data.tv_shows[0];
       if (firstShow) {
+        //when results are returned from teh query
+        //this.setstate is called to add in the 
+        //results of the users query
         this.setState({
           results: {
             name: firstShow.name,
