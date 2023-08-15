@@ -27,6 +27,8 @@ class Home extends Component {
     this.hidePopupAfterDelay();
   }
 
+
+  //this is a function to remove the popup after 2 seconds
   hidePopupAfterDelay = () => {
     setTimeout(() => {
       this.setState({ popupVisible: false });
