@@ -81,11 +81,14 @@ class Home extends Component {
         <div
           id="popupDiv"
           style={{ visibility: this.state.popupVisible ? 'visible' : 'hidden' }}
-        >
+        > 
+          {/* this is the text that the user will see from the popup */}
           Welcome to Quickshow! A quick way to learn information about a tv show or series. <br />
           Type the name of a show into the search bar and the displays at the bottom will <br />
           present the network the show belonged to, its first air date, and if it is still running.{' '}
           <br />
+          {/* as soon as the button is clicked, this.setState is called to change the popupVisible
+          boolean to false */}
           <button
             onClick={() => {
               this.setState({ popupVisible: false });
@@ -95,7 +98,7 @@ class Home extends Component {
           </button>
         </div>
         <div id="main-nav">
-          {/* ... other components ... */}
+          {/* ... and below is where the results are placed ... */}
           <div id="searchSpace">
             <form onSubmit={this.handleGetShow}>
               <input
@@ -116,6 +119,7 @@ class Home extends Component {
           </div>
         </div>
         <div>
+          {/* the destructure properties are used in their appropriate positions */}
           <h1 id="hotSpot">{name}</h1>
         </div>
         <div id="bottomRow">
