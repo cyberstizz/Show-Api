@@ -35,12 +35,14 @@ class Home extends Component {
     }, 2000);
   };
 
+  //an event handler for when a user types into the field
   handleInputChange = (event) => {
     this.setState({
       userQuery: event.target.value,
     });
   };
 
+  //an event handler for when the user clicks the button
   handleGetShow = async (event) => {
     event.preventDefault();
 
