@@ -6,12 +6,16 @@ import axios from 'axios';
 import '../App.css';
 import '../breakingbad.jpg';
 
-const startingBackground = '../breakingbad.jpg';
+//put the path to the breaking bad image in a variable
+const startingBackground = '../breakingbad.bad.jpg';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      //inside of the state I have added the breakingbad image variable
+      //as a propertty in  this.state along with the a variable for the
+      //userquery and a boolean to represent if the popup should show
       results: {},
       userQuery: '',
       backgroundImageCall: `url(${startingBackground})`,
