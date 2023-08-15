@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha --require @babel/register",
+    "test": "mocha --require @babel/register test/components/home.test.mjs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -2,8 +2,8 @@
 import assert from 'chai';
 import { mount } from 'enzyme';
 import { JSDOM } from 'jsdom';
-import React from 'react';;
-import Home from '..components/Home';
+import React from 'react';
+import Home from '../../src/components/home';
 
 // Simulate a DOM environment using JSDOM
 const { window } = new JSDOM('<!doctype html><html><body></body></html>');
