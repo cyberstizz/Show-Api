@@ -1,3 +1,6 @@
+//import everything for this project including
+//axios and the css file. I have alos included 
+//the file path to the breaking bad jpg
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../App.css';
