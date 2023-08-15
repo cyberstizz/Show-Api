@@ -71,8 +71,11 @@ class Home extends Component {
   };
 
   render() {
+    //inside the render method the first thing is to destructure
+    //everything from this.state to place into a single variable
     const { name, network, start_date, status } = this.state.results;
 
+    //now the UI is returned with the ability to refer to the stae easier
     return (
       <div id="outer">
         <div
