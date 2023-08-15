@@ -1,9 +1,9 @@
 // Import the necessary modules and libraries
-const assert = require('chai').assert;
-const { JSDOM } = require('jsdom');
-const React = require('react');
-const { mount } = require('enzyme');
-const Home = require('..components/Home');
+import assert from 'chai';
+import { mount } from 'enzyme';
+import { JSDOM } from 'jsdom';
+import React from 'react';;
+import Home from '..components/Home';
 
 // Simulate a DOM environment using JSDOM
 const { window } = new JSDOM('<!doctype html><html><body></body></html>');
